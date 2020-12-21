@@ -21,8 +21,8 @@
             android:layout_gravity="center"
             android:text="@string/main_title"
             android:fontFamily="@font/ag_benguiat_regular"
-            android:textSize="28sp"
-            android:textColor="#FFFFFF" />
+            android:textColor="#FFFFFF"
+            android:textSize="28sp" />
 
 
     </androidx.appcompat.widget.Toolbar>

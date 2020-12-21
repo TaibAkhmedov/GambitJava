@@ -78,7 +78,7 @@ public class FoodAdapter extends RecyclerView.Adapter<FoodAdapter.FoodViewHolder
 
         public void bind(FoodItem foodItem) {
             mFoodItem = foodItem;
-            foodTitle.setText(foodItem.getName());
+            foodTitle.setText(foodItem.getName().substring(3));
             foodPrice.setText(foodItem.getPrice() + "Р");
 
             count = loadPrefs(mFoodItem.getId());
