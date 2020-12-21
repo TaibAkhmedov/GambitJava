@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GambitJava</string>
+    <string name="food_name">Название блюда</string>
+    <string name="food_price">465</string>
+    <string name="food_count">1</string>
+    <string name="main_title">GAMBIT</string>
 </resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="156dp"
+    android:layout_marginTop="8dp">
+
+
+    <ImageView
+        android:id="@+id/FoodImage"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/TextView_foodName"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/food_name"
+        android:textColor="#000000"
+        android:fontFamily="@font/sf_compact_display_medium"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/FoodImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TextView_foodPrice"
+        android:layout_width="64dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/ic_price_food"
+        android:gravity="center"
+        android:text="@string/food_price"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodImage"
+        app:layout_constraintStart_toEndOf="@+id/FoodImage" />
+
+    <Button
+        android:id="@+id/Button_foodDeleteBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/ic_delete_food_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodImage"
+        app:layout_constraintEnd_toStartOf="@+id/TextView_foodCount"
+        app:layout_constraintStart_toEndOf="@+id/TextView_foodPrice" />
+
+    <Button
+        android:id="@+id/Button_foodAddBtn"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_add_food_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/FoodImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/TextView_foodCount" />
+
+    <Button
+        android:id="@+id/Button_addBasket"
+        android:layout_width="98dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_basket_btn"
+        app:layout_constraintBottom_toBottomOf="@id/FoodImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/TextView_foodPrice" />
+
+    <TextView
+        android:id="@+id/TextView_foodCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="@string/food_count"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:fontFamily="@font/sf_compact_display_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/Button_foodAddBtn"
+        app:layout_constraintEnd_toStartOf="@+id/Button_foodAddBtn"
+        app:layout_constraintStart_toEndOf="@+id/Button_foodDeleteBtn"
+        app:layout_constraintTop_toTopOf="@+id/Button_foodDeleteBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
